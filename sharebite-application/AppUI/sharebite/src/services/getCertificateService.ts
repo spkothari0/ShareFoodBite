@@ -1,6 +1,8 @@
 // get certificate by user id
+import { Constants } from './APIServiceConstants';
+
 export const getCertificate = async (userId: String) => {
-    const response = await fetch(`http://localhost:3008/certificates/${userId}`, {
+    const response = await fetch(`${Constants.API_URL}/certificates/${userId}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

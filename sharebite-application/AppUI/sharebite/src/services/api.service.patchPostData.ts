@@ -1,5 +1,7 @@
+import { Constants } from './APIServiceConstants';
+
 export const patchPostData = async (data:any, id:any) => {
-    const response = await fetch(`http://localhost:3008/medias/${id}`, {
+    const response = await fetch(`${Constants.API_URL}/medias/${id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',

@@ -1,6 +1,8 @@
+import { Constants } from './APIServiceConstants';
+
 export const apiServicePatchEventData = async (id: string, updateData: any) => {
   try {
-    const response = await fetch(`http://localhost:3008/patchEventData/${id}`, {
+    const response = await fetch(`${Constants.API_URL}/patchEventData/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

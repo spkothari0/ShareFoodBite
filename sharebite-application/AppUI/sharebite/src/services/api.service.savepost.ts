@@ -1,7 +1,9 @@
 import Swal from 'sweetalert2';
+import { Constants } from './APIServiceConstants';
+
 export const savePostData=(postData: any)=>{
     console.log('postDataServiceFile:', JSON.stringify(postData));
-    fetch('http://localhost:3008/medias', {
+    fetch(`${Constants.API_URL}/medias`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

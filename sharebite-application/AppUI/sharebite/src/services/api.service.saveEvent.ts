@@ -1,8 +1,10 @@
 import Swal from 'sweetalert2';
+import { Constants } from './APIServiceConstants';
+
 export const saveEventData=(eventData: any)=>{
     console.log('eventDataServiceFile:', JSON.stringify(eventData));
 
-    fetch('http://localhost:3008/eventData', {
+    fetch(`${Constants.API_URL}/eventData`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

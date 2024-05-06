@@ -1,6 +1,8 @@
 // post certificate service
+import { Constants } from './APIServiceConstants';
+
 export const NewCertificate = async (name: String, amount: number, userId: String ) => {
-    const response = await fetch('http://localhost:3008/certificates/', {
+    const response = await fetch(`${Constants.API_URL}/certificates/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

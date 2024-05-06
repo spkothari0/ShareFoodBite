@@ -1,7 +1,9 @@
 import e from 'express';
 import Swal from 'sweetalert2';
+import { Constants } from './APIServiceConstants';
+
 export const postDelete = async (id:any) => {
-    const response = await fetch(`http://localhost:3008/medias/${id}`, {
+    const response = await fetch(`${Constants.API_URL}/medias/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',

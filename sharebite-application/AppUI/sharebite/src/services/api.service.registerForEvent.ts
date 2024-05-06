@@ -1,9 +1,11 @@
 import Swal from 'sweetalert2';
+import { Constants } from './APIServiceConstants';
+
 export const registerForEvent = async (eventRegistrationData: any) => {
     console.log('eventRegistrationDataServiceFile:', JSON.stringify(eventRegistrationData));
 
     try {
-        const response = await fetch('http://localhost:3008/eventRegister', {
+        const response = await fetch(`${Constants.API_URL}/eventRegister`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
