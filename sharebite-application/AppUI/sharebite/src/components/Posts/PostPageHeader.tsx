@@ -68,7 +68,6 @@ function PostPageHeader( {setSearchKeyword}: PostPageHeaderProps) {
     const [searchText, setSearchText] = useState('');
     const user: User | null = useSelector(selectUser());
     const [selectedButton, setSelectedButton] = useState('All');
-    console.log('User:', user);
     // Open Dialog Function
     const handleClickOpen = () => {
         setOpen(true);

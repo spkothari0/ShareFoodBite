@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import {VitePWA} from 'vite-plugin-pwa'
+import dotenv from "dotenv";
+dotenv.config();
 //defineConfig function to configure the Vite app
 export default defineConfig({
   //base path for the app

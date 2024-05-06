@@ -16,7 +16,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { ChangeEvent } from 'react';
 import {savePostData} from '../../services/api.service.savepost';
-import {firebaseStorage} from '../../services/api.service.firbase';
+import {firebaseStorage, locationKeyConstant} from '../../services/api.service.firbase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import {v4} from 'uuid';
 import img from '../../../static/images/pink donut.jpeg';
@@ -95,7 +95,7 @@ function NewPostComponent({ open, handleClose }: NewPostComponentProps){
             console.log('Generating coordinates');
             const address = encodeURIComponent(`${area}, ${city}`);
             console.log('Address:', address);
-            const apiKey = 'pk.f4021bcc98376444fc10823bf8d4567f';
+            const apiKey = locationKeyConstant;
             const apiUrl = `https://us1.locationiq.com/v1/search?key=${apiKey}&q=${address}&format=json`;
             console.log('API URL:', apiUrl);
             axios.get(apiUrl)
@@ -127,6 +127,7 @@ function NewPostComponent({ open, handleClose }: NewPostComponentProps){
     //Function to handle the image change
     const handleImageChange = async () => {
         if (selectedImage) {
+            console.log('firebaseStorage'+firebaseStorage)
             const imageRef = ref(firebaseStorage, `files/${v4()}`);
             await uploadBytes(imageRef, selectedImage);
             const url = await getDownloadURL(imageRef);
