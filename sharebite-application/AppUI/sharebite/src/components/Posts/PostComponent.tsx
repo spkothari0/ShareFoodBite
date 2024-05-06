@@ -91,7 +91,7 @@ function PostComponent({
 
     const currentYear = new Date().getFullYear().toString();
 
-    fetch("http://localhost:3008/graphicalData")
+    fetch("http://localhost:3008/graphicalDatas")
       .then((response) => response.json())
       .then((data) => {
         const currentYearPost = data.find(
@@ -102,7 +102,7 @@ function PostComponent({
         if (currentYearPost) {
           const updatedMealsDelivered = currentYearPost.MealsDelivered + 1;
 
-          fetch(`http://localhost:3008/graphicalData/${currentYearPost._id}`, {
+          fetch(`http://localhost:3008/graphicalDatas/${currentYearPost._id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",
