@@ -84,13 +84,11 @@ function EventPageHeader( {setSearchKeyword}: EventPageHeaderProps) {
     const handleKeyDown = (event: React.KeyboardEvent) => {
         console.log('Key Down:');
         if (event.key === 'Enter') {
-            console.log('Enter Key Pressed:'+searchText);
             setSearchKeyword(searchText);
         }
     };
     // Handle search
     const handleSearch = () => {
-        console.log('Search Text:'+searchText);
         setSearchKeyword(searchText);
     }
     return (

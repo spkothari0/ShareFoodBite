@@ -54,7 +54,6 @@ function EventComponent( {searchKeyWord}: EventComponentProps) {
     // useEffect
     useEffect(() => {
         if(searchKeyWord !== undefined){
-            console.log('search keyword:'+searchKeyWord);
             if(searchKeyWord){
                 apiServiceGetFilterEvent(searchKeyWord).then((data) => {
                     setEventData(data);
@@ -77,7 +76,6 @@ function EventComponent( {searchKeyWord}: EventComponentProps) {
     const openGoogleMap = (lat:any, lng:any) => {
         const latlng = encodeURIComponent(`${lat}, ${lng}`);
         const url = `https://www.google.com/maps/search/?api=1&query=${latlng}`;
-        console.log('URL Map:'+url);
         window.open(url);
     }
     // handleExpandClick

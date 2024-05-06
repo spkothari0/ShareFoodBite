@@ -75,7 +75,6 @@ export default function SignupComponent({ open, handleClose }: DialogProps) {
         if (response.ok) {
           response.json().then((data: any) => {
             if (data) {
-              console.log('Authentication successful', data);
               dispatch(login(data));
               Swal.fire({
                 icon: 'success',
