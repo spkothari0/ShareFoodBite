@@ -6,6 +6,7 @@ const Constants = {
 
     INDIVIDUAL_USER: 'individual',
     PARTNER_USER: 'partner',
+    API_URL: 'http://localhost:3008',
 }
 
 export default Constants;

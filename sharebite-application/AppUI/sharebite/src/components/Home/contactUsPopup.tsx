@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
 import "../../../css/contactUs.css";
 import contactGraphic from "../../static/images/contactUs_graphic.png";
-
+import Constants from "../../AppConstants";
 // Define the props for the ContactUsPopup component
 interface ContactUsPopupProps {
   modalIsOpen: boolean;
@@ -23,7 +23,7 @@ const ContactUsPopup: React.FC<ContactUsPopupProps> = ({
     event.preventDefault();
 
     // Send a POST request to the server with the form data
-    const response = await fetch("http://localhost:3008/contactUs", {
+    const response = await fetch(`${Constants.API_URL}/contactUs`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const ContactUsPopup: React.FC<ContactUsPopupProps> = ({
       alert("Inquiry submitted successfully"); // Show "done" popup
 
       // Send a confirmation email to the user
-      const emailResponse = await fetch("http://localhost:3008/send-email", {
+      const emailResponse = await fetch(`${Constants.API_URL}/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

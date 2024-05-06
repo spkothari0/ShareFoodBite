@@ -10,6 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import Constants from "../../AppConstants";
 
 // Define the GraphicalData component
 const GraphicalData: React.FC = () => {
@@ -19,7 +20,7 @@ const GraphicalData: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3008/graphicalDatas");
+        const response = await fetch(`${Constants.API_URL}/graphicalDatas`);
         const fetchedData = await response.json();
         setData(fetchedData);
       } catch (error) {

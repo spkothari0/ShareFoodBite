@@ -26,6 +26,8 @@ import { selectUser } from "../../store/user-slice";
 import { User } from "../../models/User";
 import patchPostData from "../../services/api.service.patchPostData";
 import postDelete from "../../services/api.service.postDelete";
+import Constants from '../../AppConstants';
+
 // ExpandMore Props Type
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -91,7 +93,7 @@ function PostComponent({
 
     const currentYear = new Date().getFullYear().toString();
 
-    fetch("http://localhost:3008/graphicalDatas")
+    fetch(`${Constants.API_URL}/graphicalDatas`)
       .then((response) => response.json())
       .then((data) => {
         const currentYearPost = data.find(
@@ -102,7 +104,7 @@ function PostComponent({
         if (currentYearPost) {
           const updatedMealsDelivered = currentYearPost.MealsDelivered + 1;
 
-          fetch(`http://localhost:3008/graphicalDatas/${currentYearPost._id}`, {
+          fetch(`${Constants.API_URL}/graphicalDatas/${currentYearPost._id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",

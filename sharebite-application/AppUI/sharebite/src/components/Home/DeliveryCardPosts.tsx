@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../../../css/CardPosts.css";
 import { getpost } from "../../services/api.service.getpost";
-
+import Constants from "../../AppConstants";
 // Define the structure of the Location object
 interface Location {
   id: number;
@@ -66,7 +66,7 @@ const DeliveryCardPosts: React.FC = () => {
     setIsPickedUp(newIsPickedUp);
 
     const post = posts[index];
-    const resp = await fetch(`http://localhost:3008/posts/${post._id.$oid}`, {
+    const resp = await fetch(`${Constants.API_URL}/posts/${post._id.$oid}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -78,7 +78,7 @@ const DeliveryCardPosts: React.FC = () => {
     if (!resp.ok) {
       console.error("Failed to update post");
     }
-    const response = await fetch("http://localhost:3000/send-email", {
+    const response = await fetch(`${Constants.API_URL}/send-email`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

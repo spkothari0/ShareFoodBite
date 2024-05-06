@@ -6,7 +6,7 @@ import ContactUsPopup from "./contactUsPopup";
 import { useSelector } from "react-redux";
 import { User } from "../../models/User";
 import { selectUser } from "../../store/user-slice";
-
+import Constants from "../../AppConstants";
 // Define the Footer component
 const Footer: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3008/subscribers", {
+      const response = await fetch(`${Constants.API_URL}/subscribers`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
       }
 
       // Send an email
-      const emailResponse = await fetch("http://localhost:3008/send-email", {
+      const emailResponse = await fetch(`${Constants.API_URL}/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

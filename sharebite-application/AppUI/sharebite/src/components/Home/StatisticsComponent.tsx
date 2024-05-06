@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { User } from "../../models/User";
 import { selectUser } from "../../store/user-slice";
 import { getUserCountByRole } from "../../services/api.service.users";
-
+import Constants from "../../AppConstants";
 // Define the StatisticsComponent
 export const StatisticsComponent = () => {
   const [mealsDelivered, setMealsDelivered] = useState(0);
@@ -34,7 +34,7 @@ export const StatisticsComponent = () => {
 
     setVolunteersEngaged(userCount);
 
-    fetch("http://localhost:3008/graphicalDatas")
+    fetch(`${Constants.API_URL}/graphicalDatas`)
       .then((response) => response.json())
       .then((data) => {
         const totalMealsDelivered = data.reduce(
