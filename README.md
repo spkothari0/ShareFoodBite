@@ -31,6 +31,7 @@ ShareBite is a collaborative platform that connects surplus food providers, volu
 
 - Go to the AppAPI using command `cd sharebite-application/AppAPI` and install all the libraries using the command `npm i`, then run `npm start`. This will start the backend of the application.
 - To start the frontend run command `cd sharebite-application/AppUI/sharebite` and install all the libraries using the command `npm i`, then run `npm start` to start the frontend of the application.
+
 Note: The .env files are not uploaded for security reasons. Connect with one of the team members to get the info on .env file.
 
 ## Sharebite Team Members
