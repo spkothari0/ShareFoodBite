@@ -11,4 +11,4 @@ function PostPageForProfile() {
         </>
     );  
 }
-export default PostPageForProfile;
+export default PostPageForProfile; 
