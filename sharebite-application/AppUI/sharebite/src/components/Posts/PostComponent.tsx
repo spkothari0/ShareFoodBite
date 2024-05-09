@@ -75,8 +75,10 @@ function PostComponent({
         searchKeyWord = user?.id;
         apiServiceGetFilterPost(searchKeyWord ?? "").then((data) => {
           console.log("Post Data:" + JSON.stringify(data));
-          setPostData(data);
-          setExpanded(new Array(data.length).fill(false));
+          // Filter the data where isDelivered is 0
+          const filteredData = data.filter((post: { isDelivered: number; }) => post.isDelivered === 0);
+          setPostData(filteredData);
+          setExpanded(new Array(filteredData.length).fill(false));
         });
       } else {
         getpost().then((data) => {
@@ -401,6 +403,7 @@ function PostComponent({
                         onClick={() => {
                           const postData = {
                             isPickedUp: 1,
+                            deliveryId: user.id
                           };
                           patchPostDatas(postData, post.id);
                         }}
@@ -430,6 +433,7 @@ function PostComponent({
                           };
                           patchPostDatas(postData, post.id);
                           updateMealsDelivered();
+                          window.location.reload();
                         }}
                         sx={{
                           backgroundColor: "black",
