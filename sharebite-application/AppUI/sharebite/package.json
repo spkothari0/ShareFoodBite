@@ -10,7 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b main -o",
+    "deploy": "gh-pages -d dist -b main",
     "sass": "sass --watch src/scss/main.scss:src/dist/main.css src/scss/navbar.scss:src/dist/navbar.css src/scss/login.scss:src/dist/login.css src/scss/language.scss:src/dist/language.css",
     "start": "npm-run-all -p sass dev",
     "pwa-assets": "pwa-assets-generator --preset minimal-2023 public/images/logo.svg"
