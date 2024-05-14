@@ -1,4 +1,4 @@
-const Constants = {
+let Constants = {
     // App Name
     APP_NAME: 'ShareBite',
     // App Version
@@ -6,7 +6,7 @@ const Constants = {
 
     INDIVIDUAL_USER: 'individual',
     PARTNER_USER: 'partner',
-    API_URL: 'http://localhost:3008',
+    API_URL: import.meta.env.VITE_API_URL,
 }
 
 export default Constants;
