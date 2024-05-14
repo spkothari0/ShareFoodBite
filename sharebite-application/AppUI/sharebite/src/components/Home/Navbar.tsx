@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../../../css/Navbar.css";
-import LoginPopup from "./LoginPopup"; // Import the LoginPopup component
 
 // Define the Navbar component
 const Navbar: React.FC = () => {
@@ -42,7 +41,6 @@ const Navbar: React.FC = () => {
           </ul>
         )}
       </nav>
-      {isLoginOpen && <LoginPopup onClose={handleLoginClose} />}
     </header>
   );
 };
