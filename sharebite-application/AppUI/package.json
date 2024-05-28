@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "build": "cd sharebite-application/AppUI/sharebite && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "cd sharebite-application/AppUI/sharebite && npm run deploy"},
   "author": "",
   "license": "ISC"
 }
