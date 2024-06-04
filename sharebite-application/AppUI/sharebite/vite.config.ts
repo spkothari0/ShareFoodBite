@@ -30,22 +30,22 @@ export default defineConfig({
         "theme_color": "#ffffff",
         "icons": [
           {
-            "src": "public/images/pwa-64x64.png",
+            "src": "images/pwa-64x64.png",
             "sizes": "64x64",
             "type": "image/png"
           },
           {
-            "src": "public/images/pwa-192x192.png",
+            "src": "images/pwa-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
           },
           {
-            "src": "public/images/pwa-512x512.png",
+            "src": "images/pwa-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
           },
           {
-            "src": "public/images/maskable-icon-512x512.png",
+            "src": "images/maskable-icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
