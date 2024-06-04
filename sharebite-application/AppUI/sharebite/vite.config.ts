@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     port: 3002,
   },
-  //base: '/ShareFoodBite/',
+  // base: '/ShareFoodBite/',
   //List of plugins used in the app
   plugins: [react(),
     VitePWA({
