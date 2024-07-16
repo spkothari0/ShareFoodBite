@@ -2,7 +2,9 @@
 <p>
 Welcome to Project ShareBite, an initiative aimed at achieving the ambitious goal of ZERO Hunger worldwide. Our mission is to address food wastage issues by leveraging technology, community engagement, and sustainable solutions.
 </p>
-Click here to visit website: https://sharebite-tawny.vercel.app
+Click here to visit the website: https://sharebite-tawny.vercel.app
+
+Here is the link for a short Video of the project: [Video Link](https://drive.google.com/file/d/1S0VkYD2HxJOYI-xyqvVvU5PP79zRS8mF/view?usp=sharing)
 
 # About ShareBite
 
