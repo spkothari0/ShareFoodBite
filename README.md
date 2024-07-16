@@ -1,6 +1,8 @@
 # ShareBite a project to achieve target of ZERO Hunger
-
+<p>
 Welcome to Project ShareBite, an initiative aimed at achieving the ambitious goal of ZERO Hunger worldwide. Our mission is to address food wastage issues by leveraging technology, community engagement, and sustainable solutions.
+</p>
+Click here to visit website: [Link](https://sharebite-tawny.vercel.app/)
 
 # About ShareBite
 
