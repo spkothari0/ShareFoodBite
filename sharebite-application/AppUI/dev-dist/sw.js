@@ -82,7 +82,7 @@ define(['./workbox-020f9b45'], (function (workbox) { 'use strict';
     "revision": "3ca0b8505b4bec776b69afdba2768812"
   }, {
     "url": "index.html",
-    "revision": "0.8qm2l23fk98"
+    "revision": "0.9i6vr6g4m2g"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
@@ -117,7 +117,7 @@ define(['./workbox-020f9b45'], (function (workbox) { 'use strict';
   workbox.registerRoute(({
     url
   }) => {
-    return url.pathname.includes("getALlEventData");
+    return url.pathname.includes("getAllEventData");
   }, new workbox.NetworkFirst({
     "cacheName": "event-data-cache",
     plugins: [new workbox.ExpirationPlugin({
