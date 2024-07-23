@@ -10,6 +10,25 @@ Here is the link for a short Video of the project: [Video Link](https://drive.go
 
 ShareBite is a collaborative platform that connects surplus food providers, volunteers, and individuals in need, creating a network where surplus food can be efficiently redistributed to those who require it the most. By harnessing the power of technology, we strive to eliminate food waste while simultaneously combating hunger in our communities.
 
+## 🌟 Our Mission
+1. Zero Hunger: We aim to eradicate hunger by redistributing surplus food to food-insecure individuals.
+2. Reduce Food Waste: Connecting surplus food providers (farmers, restaurants, grocers) with those who can use it efficiently.
+
+## 🚀 Key Features
+- User, Partner, Volunteer, NGO Registration: Seamlessly onboard various stakeholders to our platform.
+- Surplus Food Posting: Vendors can post surplus food details, enabling efficient redistribution.
+- Volunteer and Chef Hiring: Connects passionate individuals with opportunities to contribute as riders, kitchen staff, or servers.
+- Multi-language Support: Enabled via Microsoft Azure API, ensuring accessibility for diverse users, and accessibility to 150+ languages.
+- Location Features: Utilizes Location IQ API for forward geocoding and Google API for reverse geocoding.
+- Dynamic Certificate Generator: Donors receive personalized certificates created using JS PDF.
+- Email Notifications: Automated updates on delivery status to keep stakeholders informed.
+- Food and Event Posts: Share availability and awareness posts to engage the community.
+- Progressive Web App (PWA): Our platform is designed as a PWA, providing a seamless and responsive user experience across all devices.
+
+## 🛠 Technologies Used
+- JavaScript, TypeScript, React, Node.js, Express.js, MongoDB
+- Bootstrap, CSS, Firebase, HTML, Sass, Redux
+
 # Our Goals
 
 - Zero Hunger: Our primary objective is to contribute towards the global effort to eradicate hunger in all its forms by facilitating the redistribution of surplus food to those who are food insecure.
