@@ -6,7 +6,7 @@ Click here to visit the website: https://sharebite-tawny.vercel.app
 
 Here is the link for a short Video of the project: [Video Link](https://drive.google.com/file/d/1S0VkYD2HxJOYI-xyqvVvU5PP79zRS8mF/view?usp=sharing)
 
-## ⚡ Quick Recruiter Snapshot
+## ⚡Quick Recruiter Snapshot
 
 ShareBite is a full-stack social-impact web platform that helps reduce food waste and hunger by connecting food donors, NGOs, and volunteers in one workflow.
 
