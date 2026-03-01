@@ -6,6 +6,25 @@ Click here to visit the website: https://sharebite-tawny.vercel.app
 
 Here is the link for a short Video of the project: [Video Link](https://drive.google.com/file/d/1S0VkYD2HxJOYI-xyqvVvU5PP79zRS8mF/view?usp=sharing)
 
+## ⚡ Quick Recruiter Snapshot
+
+ShareBite is a full-stack social-impact web platform that helps reduce food waste and hunger by connecting food donors, NGOs, and volunteers in one workflow.
+
+### Technologies Used (and Why)
+
+| Technology | Purpose in this Project | Skill Demonstrated |
+| --- | --- | --- |
+| React + TypeScript | Build the frontend UI with reusable, typed components | Frontend architecture, typed UI development |
+| Redux | Manage shared app state across roles and workflows | Predictable state management |
+| Node.js + Express.js | Create backend APIs and business logic for posts, delivery flow, and users | REST API development, backend design |
+| MongoDB | Store users, posts, and delivery-related data | NoSQL data modeling |
+| Firebase | Support cloud integration services used by the app | Cloud service integration |
+| Bootstrap + Sass + CSS | Build responsive, styled interfaces quickly | Responsive design, UI implementation |
+| Microsoft Azure Translation API | Provide multilingual support (150+ languages) | External API integration, accessibility |
+| LocationIQ + Google Geocoding APIs | Handle address/coordinate conversion for pickup and drop | Geo-enabled product workflows |
+| jsPDF | Generate donor certificates dynamically | Document generation in web apps |
+| PWA setup | Deliver app-like experience across devices | Progressive Web App development |
+
 # About ShareBite
 
 ShareBite is a collaborative platform that connects surplus food providers, volunteers, and individuals in need, creating a network where surplus food can be efficiently redistributed to those who require it the most. By harnessing the power of technology, we strive to eliminate food waste while simultaneously combating hunger in our communities.
